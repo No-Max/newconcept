@@ -1,0 +1,290 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	body
+		font-size: 14px
+		line-height: 1.5
+	.service 
+		.tab-content 
+			.info 
+				padding: 0 20px	
+				.content-image
+					width: 40%
+				.content-info
+					width: 60%
+	.mission 
+		.image 
+			top: 0
+			left: -72%
+		.buttons
+			flex-direction: column-reverse;
+	.keys 
+		.image
+			top: 0
+			right: -50%
+	.buttons
+		display: flex
+		flex-direction: column
+		align-items: center
+	.main 
+		.content 
+			.container 
+				.description
+					margin: 40px 0
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.pageup
+		right: 15px	
+		bottom: 15px
+	.btn-yellow-o
+		border-color: $color-yelow
+		color: $color-white
+		background-color: $color-yelow
+	.btn-blue-o
+		border-color: $color-blue
+		color: $color-white
+		background-color: $color-blue
+	.title-move
+		font-size: 30px
+		line-height: 36px
+	.info
+		.description
+			font-family: "SFUIDisplay Regular";
+	header
+		.btn
+			color: $color-black		
+		.logo
+			flex-grow: 4
+			position: relative	
+			z-index: 3
+			img
+				height: 35px
+		.burger
+			position: relative	
+			z-index: 3
+		.lang
+			position: relative	
+			z-index: 3
+		.container
+			nav
+				z-index: 2
+				display: block	
+				position: absolute
+				width: 100%	
+				left: 0	
+				top: 0	
+				height: 110vh
+				background-color: $color-black
+				top: -10px 
+				left: 100% 
+				opacity: 0
+				transition: all 0.4s ease 
+				ul
+					width: 100%	
+					flex-direction: column
+					height: 100%
+					align-items: center	
+					padding: 60px 0
+					justify-content: space-around
+					li
+						a:before
+							display: none
+			nav.active
+				left: 0
+				opacity: 1
+	.main 
+		video
+			width: auto
+			height: 100vh
+			right: 0
+			left: auto
+		.content 
+			.container 
+				.title
+					font-size: 24px
+					line-height: 30px
+				.description 
+					font-size: 16px
+					line-height: 20px
+					margin: 30px 0
+	
+	.keys 
+		.image 
+			top: 0
+			right: auto
+			left: 20%
+		ul
+			padding-left: 10px
+	.mission 
+		.image
+			top: 0
+			left: auto
+			right: 70%
+	.buttons
+		text-align: center
+		.social
+			display: block	
+			margin-top: 20px
+			a
+				opacity: 1
+	.service 
+		.container
+			padding: 0
+		.slick-dots
+			display: block
+			visibility: visible
+		.slider-item
+			.title
+				padding-right: 40px 
+		.title-move
+			text-align: left
+			padding: 0 15px
+		.slider-body
+			box-shadow: none
+			background-position: right
+			background-image: url("../img/bg/service-decorate-mobile.png")
+			.info
+				padding: 0 15px	
+				display: block	
+				position: relative
+				overflow: hidden
+				min-height: 500px
+				.content-info
+					width: auto
+					position: relative
+					z-index: 2
+					.buttons
+						margin-top: 40px
+					.description
+						font-family: "SFUIDisplay Regular";
+				.content-image
+					position: absolute
+					right: -190px
+					top: 120px
+					z-index: 1
+					width: 400px
+					opacity: 0.4
+
+			.title
+				font-size: 24px	
+				line-height: 30px	
+		.decor-container 
+			.decor-img
+				display: none
+	.technology
+		background-image: url("../img/bg/technology-mobile.png")
+		background-position: left bottom
+		min-height: auto
+		padding-bottom: 100px
+		background-size: 150%
+		.small
+			line-height: 14px
+		.dynamic-li
+			padding-top: 20px
+			padding-left: 10px
+			line-height: 14px
+			p
+				line-height: 18px
+		.panel-nav
+			padding-top: 30px
+			li
+				display: flex
+				align-items: center
+				span
+					opacity: 1
+					height: auto
+					min-width: 10px
+					background-color: transparent
+					transition: all 0.3s ease
+					.drop-down
+						display: inline-block
+					.drop-up
+						display: none
+				a
+					font-size: 16px
+					padding: 10px 0
+					line-height: 20px
+			.active
+				a
+					color: $color-silver
+			.active-tech
+				span
+					opacity: 1
+					margin-left: 0
+					.drop-up
+						display: inline-block
+					.drop-down
+						display: none
+				a
+					color: $color-blue
+			
+	.contacts
+		position: relative
+		padding-top: 80px
+		.small-text
+			color: #ccc
+		.map
+			padding-top: 80px
+			position: static
+			left: 0
+			top: 0
+			width: 100%
+			height: 400px
+	footer	
+		margin-top: 10px
+		margin-bottom: 20px
+		.my-row
+			flex-direction: column-reverse
+			.copy
+				color: $color-black
+				padding-bottom: 5px
+		/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
